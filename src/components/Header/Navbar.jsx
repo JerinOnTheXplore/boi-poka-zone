@@ -14,6 +14,7 @@ const Navbar = () => {
         tabIndex={0}
         className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
         <Link to='/about'><li className='text-lg text-gray-700 font-medium'><a>Listed Books</a></li></Link>
+        <Link to='/readList'><li className='text-lg text-gray-700 font-medium'><a>ReadList</a></li></Link>
         
         <li><a>Pages to Read</a></li>
       </ul>
@@ -24,6 +25,7 @@ const Navbar = () => {
     <ul className="menu menu-horizontal px-1">
     <Link to='/'><button className="btn btn-success text-lg text-gray-700 font-medium">Home</button></Link>
     <Link to='/about'><li className='text-lg text-gray-700 font-medium'><a>Listed Books</a></li></Link>
+    <Link to='/readList'><li className='text-lg text-gray-700 font-medium'><a>Read List</a></li></Link>
       <li className='text-lg  font-medium text-slate-700'><a>Pages to read</a></li>
     </ul>
   </div>
