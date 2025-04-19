@@ -1,10 +1,12 @@
 import React from 'react';
 import { FaRegStar } from "react-icons/fa";
+import { Link } from 'react-router';
 const Book = ({singleBook}) => {
     console.log(singleBook)
-    const {tags}=singleBook;
+    const {tags,bookId}=singleBook;
     return (
         <div>
+            <Link to={`/bookDetails/${bookId}`}>
             <div className="card bg-base-100 w-96 shadow-sm">
   <figure className='p-6 bg-slate-100 w-2/3 mx-auto pt-3'>
     <img className='h-64'
@@ -39,6 +41,7 @@ rating}<FaRegStar className='text-orange-400' size={16} /></div>
     </div>
   </div>
 </div>
+            </Link>
         </div>
     );
 };
